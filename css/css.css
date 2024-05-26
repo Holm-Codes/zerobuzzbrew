@@ -5,8 +5,10 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: lime;
-   --backgr: #000;
+   --contrast: #000000;
+   --backgr: #f9f9f9;
+   --lblue: #93dfe4;
+   --dblue: #18767c;
  }
 
 /* Use your variables on elements */
@@ -14,3 +16,22 @@
    color: var(--contrast);
    background-color: var(--backgr);
  }
+
+ @media (min-width: 320px),(max-width:500px) {
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+ h2, h3, h4, h5, h6{
+  font-family: "Montserrat", sans-serif;
+ }
+
+ p {
+  font-family: "Roboto Slab", serif;
+}
+
+}
+
+ @media (min-width: 501px) {
+}

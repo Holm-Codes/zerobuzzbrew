@@ -11,12 +11,12 @@
    --dblue: #18767c;
  }
 
-/* Use your variables on elements */
  main {
    color: var(--contrast);
    background-color: var(--backgr);
  }
 
+/* Media Query for Mobile Viewport */
  @media (min-width: 320px),(max-width:500px) {
 
 h1 {
@@ -31,7 +31,72 @@ h1 {
   font-family: "Roboto Slab", serif;
 }
 
+.slider {
+  position: relative;
+  width: auto;
+  min-width: 320px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation label {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3),
+#slide4:checked ~ .navigation label:nth-child(4) {
+  background: #333;
+}
+
 }
 
  @media (min-width: 501px) {
+
 }

@@ -16,6 +16,10 @@
    background-color: var(--backgr);
  }
 
+ body, html {
+  height: 100%;
+ }
+
 /* Media Query for Mobile Viewport */
  @media (min-width: 320px),(max-width:500px) {
 
@@ -31,6 +35,7 @@ h1 {
   font-family: "Roboto Slab", serif;
 }
 
+/*  Mobile landing carousel style start */
 .slider {
   position: relative;
   width: auto;
@@ -94,6 +99,13 @@ h1 {
 #slide4:checked ~ .navigation label:nth-child(4) {
   background: #333;
 }
+/*  Mobile landing carousel style slut */
+
+/*  Mobile events style start */
+.events {
+  height: 100%;
+}
+/*  Mobile events style slut */
 
 }
 

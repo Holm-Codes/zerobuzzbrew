@@ -17,6 +17,7 @@
    background-color: var(--backgr);
  }
 
+ /* Media Query for Mobile Viewport */
  @media (min-width: 320px),(max-width:500px) {
 
   h1 {
@@ -30,6 +31,8 @@
    p {
     font-family: "Roboto Slab", serif;
   }
+
+  
   
 } 
 

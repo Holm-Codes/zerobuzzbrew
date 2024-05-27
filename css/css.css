@@ -22,7 +22,7 @@
  }
 
 /* Media Query for Mobile Viewport */
- @media (min-width: 320px),(max-width:500px) {
+@media (min-width: 320px),(max-width:500px) {
 
 h1 {
   font-family: "Pacifico", cursive;
@@ -34,6 +34,11 @@ h1 {
 
  p {
   font-family: "Roboto Slab", serif;
+}
+
+.button1:hover, .button2:hover {
+background-color: var(--dblue);
+color: var(--backgr);
 }
 
 /*  Mobile landing carousel style start */
@@ -100,7 +105,10 @@ h1 {
 #slide4:checked ~ .navigation label:nth-child(4) {
   background: #333;
 }
+
 /*  Mobile landing carousel style slut */
+
+
 
 /*  Check om det er nødvendigt med den her box! */
 .forsidebox {
@@ -109,19 +117,61 @@ h1 {
 }
 
 /*  Mobile events style start */
-.events {
+.eventhero {
   display: flex;
-  height: auto;
+  height: 50vh;
+  width: auto;
+  margin: 0;
+}
+
+.event-headline {
+  display: inline-block;
+  position: absolute;
+}
+
+.eventhero-container, .button1 {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--lblue);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%; /*  Fix this too, it seems insane having to do this. There must be a smarter way. Only works on smallet viewport*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*  Mobile events sektion style slut */
+
+/*  Mobile bag produktionen sektion style start */
+.bag-produktionen {
+  display: flex;
+  height: 50vh;
   max-width: 100%;
   margin: 0;
 }
-/*  Mobile events sektion style slut */
-/*  Mobile bag produktionen sektion style slut */
-.bag-produktionen {
+
+.produktion-headline {
   display: flex;
-  height: auto;
-  max-width: 100%;
-  margin: 0;
+  flex-direction: column;
+  position: absolute;
+}
+
+/*  Fix this after. Same issue as above */
+.produktionhero-container, .button2 {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--lblue);
+  border-radius: 5px;
+  position: absolute;
+  top: 191%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 }

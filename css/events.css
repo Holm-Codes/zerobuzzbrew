@@ -30,6 +30,11 @@
   p {
     font-family: "Roboto Slab", serif;
   }
+
+  .event-hero {
+    width: 100%;
+    height: auto;
+  }
 } 
 
  @media (min-width: 501px) {

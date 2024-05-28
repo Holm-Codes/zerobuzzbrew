@@ -119,9 +119,10 @@ color: var(--backgr);
 /*  Mobile events style start */
 .eventhero {
   display: flex;
-  height: 50vh;
-  width: auto;
+  max-width: 100%;
+  height: auto;
   margin: 0;
+  object-fit: cover;
 }
 
 .event-headline {
@@ -148,9 +149,10 @@ color: var(--backgr);
 /*  Mobile bag produktionen sektion style start */
 .bag-produktionen {
   display: flex;
-  height: 50vh;
   max-width: 100%;
+  height: auto;
   margin: 0;
+  object-fit: cover;
 }
 
 .produktion-headline {

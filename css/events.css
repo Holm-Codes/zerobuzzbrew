@@ -19,6 +19,10 @@
 
  @media (min-width: 320px),(max-width:500px) {
 
+  body {
+    margin: 0;
+  }
+
   h1 {
     font-family: "Pacifico", cursive;
   }
@@ -31,11 +35,44 @@
     font-family: "Roboto Slab", serif;
   }
 
+  img {
+    width: 100%;
+  }
+
   .event-hero {
     width: 100%;
     height: auto;
   }
+
+  .events-landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+/* event katalog styling start*/
+  .event-titel-date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -2rem;
+  }
+
+
+/* event katalog styling slut*/
 } 
 
  @media (min-width: 501px) {
+
+  .row {
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    flex-direction: row; /* sætter elementerne på række */
+    align-items: center; /* centerer elementerne i kassen */
+  }
+  .events-landing-container {
+    display: flex;
+    max-width: 100%;
+  }
+
 }

@@ -19,6 +19,11 @@
 
  @media (min-width: 320px),(max-width:500px) {
 
+  body {
+    background-color: var(--dblue);
+    margin: 0;
+  }
+
   h1 {
     font-family: "Pacifico", cursive;
   }
@@ -30,8 +35,46 @@
    p {
     font-family: "Roboto Slab", serif;
   }
+
+  img {
+    width: 100%; /* gør billederne responsive, så de altid vil fylde 100% at viewportens størelse*/
+    height: auto; /* ændrer sig ift. billedest bredde, så billedets dimensioner bevares*/
+  }
+
+  .produktion-landing-container {
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    align-items: center; /* centerer elementerne i kassen */
+    flex-direction: column; /* sætter elementerne i kassen i en søjle */
+    text-align: center; /* centerer teksen i kassen */
+    background-color: var(--dblue); /* bestemmer kassens baggrundsfarve */
+    color: var(--backgr); /* bestemmer farven på teksten i kassen */
+  }
   
+  .produktionen-info-container{
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    align-items: center; /* centerer elementerne i kassen */
+    flex-direction: column; /* sætter elementerne i kassen i en søjle */
+    background-color: var(--dblue); /* bestemmer kassens baggrundsfarve */
+    color: var(--backgr); /* bestemmer farven på teksten i kassen */
+  }
+
 } 
 
  @media (min-width: 501px) {
+
+  .row {
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    flex-direction: row; /* sætter elementerne på række */
+    align-items: center; /* centerer elementerne i kassen */
+    
+  }
+
+  .tekst {
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    flex-direction: column; /* sætter teksten i kassen i en søjle */
+    margin-left: 1rem; /* skaber luft udenfor boksen i venstre side*/
+    margin-right: 1rem; /* skaber luft udenfor boksen i højre side*/
+  }
+
+  
 }

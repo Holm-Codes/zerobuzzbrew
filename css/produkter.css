@@ -19,6 +19,7 @@
 
  body {
   background-color: var(--backgr);
+  margin: 0;
  }
 
  /* Media Query for Mobile Viewport */
@@ -163,6 +164,7 @@
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
+  margin: 0.5rem;
  }
 
  /* Footer styling slut */
@@ -170,4 +172,12 @@
 } 
 
  @media (min-width: 501px) {
+
+  .row {
+    display: flex; /* gør elementerne flexible ift. kassen*/
+    flex-direction: row; /* sætter elementerne på række */
+    align-items: center; /* centerer elementerne i kassen */
+  
+    width: 100%;
+  }
 }

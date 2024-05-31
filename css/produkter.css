@@ -127,8 +127,6 @@
   display: block;
   text-align: left;
 }
-
-
  /* Header menu styling slut */
 
  /* Produkt landing styling start */
@@ -139,16 +137,17 @@
 
  .produkter-landing-container {
   display: flex;
+  background-image: url("images/produkter/produkt-hero-mobil.png");
   flex-direction: column;
   position: relative;
   text-align: center;
   width: 100%;
-  object-fit: cover;
+  height: 738px;
   
  }
 
  .event-landing-text {
-  position: absolute;
+  position: relative;
   flex-direction: column;
   top: 50%;
   left: 50%;
@@ -167,6 +166,16 @@
   margin: 0.5rem;
  }
 
+h4 {
+  font-weight: 600;
+  color: var(--dblue);
+}
+
+ p {
+  max-width: 52ch;
+  font-size: medium;
+ }
+
  /* Footer styling slut */
 
 } 
@@ -176,7 +185,7 @@
   .row {
     display: flex; /* gør elementerne flexible ift. kassen*/
     flex-direction: row; /* sætter elementerne på række */
-    align-items: center; /* centerer elementerne i kassen */
+    align-items: flex-start;
   
     width: 100%;
   }

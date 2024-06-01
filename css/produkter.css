@@ -36,6 +36,7 @@
 
    p {
     font-family: "Roboto Slab", serif;
+    align-items: center;
   }
 
   h2{
@@ -66,7 +67,7 @@
     align-items: center;
     text-align: center;
     width: auto;
-    max-width: 52ch;
+    
     font-size: medium;
   }
   
@@ -119,6 +120,7 @@
 
 .mobil-menu .icon {
   display: none;
+  position:relative
 }
 
 .mobil-menu a {display: none;}
@@ -144,17 +146,17 @@
 
  /* Produkt landing styling start */
 
- .event-landing-container {
+ .produkt-landing-container {
   position: relative;
   flex-direction: column;
-  display: flex;
-  flex-direction: column;
+  display: flex;  
   text-align: center;
+  align-items: center;
   background-image: url("images/produkter/produkt-hero-mobil.png"); /* Fix billedvisning problem!*/
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
-  width: 100%; 
+  min-width: 320px; 
   height: 100vh;
   margin: 3.2rem; 
  }

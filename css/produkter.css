@@ -55,6 +55,8 @@
     align-items: center;
     text-align: center;
     width: auto;
+    font-weight: 600;
+    color: var(--dblue);
   }
 
   p{
@@ -64,6 +66,8 @@
     align-items: center;
     text-align: center;
     width: auto;
+    max-width: 52ch;
+    font-size: medium;
   }
   
  /* Header menu styling start. OBS Få fixet dimensionerne her også */
@@ -72,23 +76,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
 }
 
 #logo {
-    width: 8rem;
+    width: 11rem;
     height: auto;
     align-self: center;
 }
 
  .mobil-menu {
   overflow: hidden;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+#menu-links {
   font-family: "Montserrat", sans-serif;
 }
 
 .mobil-menu, a {
-  float: left;
+  float: right;
   display: block;
   color: var(--contrast);
   text-align: center;
@@ -111,15 +121,17 @@
   display: none;
 }
 
-.mobil-menu a:not(:first-child) {display: none;}
+.mobil-menu a {display: none;}
 .mobil-menu a.icon {
   float: right;
   display: block;
+  border-radius: 5px;
 }
 
 .mobil-menu.responsive {position: relative;}
 .mobil-menu.responsive a.icon {
   position: absolute;
+  margin: 1rem;
   right: 0;
   top: 0;
 }
@@ -131,28 +143,22 @@
  /* Header menu styling slut */
 
  /* Produkt landing styling start */
- .produkter-hero {
-  width: 100%;
-  height: 100vh;
- }
 
- .produkter-landing-container {
+ .event-landing-container {
+  position: relative;
+  flex-direction: column;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  margin-left: 6rem;
-  
+  background-image: url("images/produkter/produkt-hero-mobil.png"); /* Fix billedvisning problem!*/
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  width: 100%; 
+  height: 100vh;
+  margin: 3.2rem; 
  }
-
- .event-landing-text {
-  position: relative;
-  background-image: url("images/produkter/produkt-hero-mobil.png");
-  height: 738px;
-  width: 100%;
-  flex-direction: column;
  
- }
 /* Produkt landing styling slut */
 
 /* Produkt katalog styling start */
@@ -165,16 +171,23 @@
   margin: 0.5rem;
  }
 
-h4 {
+.button {
+  background-color: var(--lblue);
+  color: var(--contrast);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: var(--dblue);
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
- p {
-  max-width: 52ch;
-  font-size: medium;
- }
-
+ .button:hover{
+  background-color: var(--dblue);
+  color: var(--backgr);
+  }
  /* Footer styling slut */
 
 } 
@@ -188,4 +201,26 @@ h4 {
   
     width: 100%;
   }
+}
+
+@media (min-width: 770px) {
+
+.mobil-menu a.icon {
+  display: none;
+}
+
+.mobil-menu a {
+  display: block;
+}
+
+#menu-links {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-left: 0;
+}
+
+.entire-mobil-menu {
+  justify-content: space-between;
+}
+
 }

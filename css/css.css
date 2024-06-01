@@ -36,11 +36,6 @@ h1 {
   font-family: "Roboto Slab", serif;
 }
 
-.button1:hover, .button2:hover {
-background-color: var(--dblue);
-color: var(--backgr);
-}
-
 /*  Mobile landing carousel style start */
 .slider {
   position: relative;
@@ -117,63 +112,52 @@ color: var(--backgr);
 }
 
 /*  Mobile events style start */
-.eventhero {
+
+
+/*  Fix this mess, style them seperately*/
+#eventhero-container {
   display: flex;
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  object-fit: cover;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
 }
 
-.event-headline {
-  display: inline-block;
-  position: absolute;
-}
-
-.eventhero-container, .button1 {
-  font-family: "Montserrat", sans-serif;
+.button {
   background-color: var(--lblue);
-  border-radius: 5px;
-  position: absolute;
-  top: 50%; /*  Fix this too, it seems insane having to do this. There must be a smarter way. Only works on smallet viewport*/
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 10px 20px;
+  color: var(--contrast);
   border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
+
+.button:hover{
+  background-color: var(--dblue);
+  color: var(--backgr);
+  }
 
 /*  Mobile events sektion style slut */
 
 /*  Mobile bag produktionen sektion style start */
-.bag-produktionen {
-  display: flex;
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  object-fit: cover;
-}
 
-.produktion-headline {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-}
 
 /*  Fix this after. Same issue as above */
-.produktionhero-container, .button2 {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--lblue);
-  border-radius: 5px;
-  position: absolute;
-  top: 191%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+.produktionhero-container {
+  background-image: url("../images/bag-produktionen/produktion-hero-mobil");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
 }
 
 }

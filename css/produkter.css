@@ -55,13 +55,13 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     width: auto;
     
     font-size: medium;
   }
   
- /* Header menu styling start. OBS Få fixet dimensionerne her også */
+ /* Header menu styling start.*/
 
  .entire-mobil-menu {
   display: flex;
@@ -98,14 +98,13 @@
   font-size: 17px;
 }
 
-
 .mobil-menu a:hover {
-  background-color: var(--lblue);
-  color: var(--contrast);
+  color: var(--dblue);
 }
 
 .mobil-menu a.active {
   background-color: var(--dblue);
+  border-radius: 10px;
   color: var(--backgr);
 }
 
@@ -198,7 +197,6 @@
   .logo-footer {
     width: 250px;
     height: auto;
-  
   }
 
   .some-container {
@@ -209,7 +207,6 @@
   }
 
   .some-ikon {
-
     height: auto;
     width: 20px;
   }
@@ -227,6 +224,10 @@
   color: var(--backgr);
  }
 
+ #p-footer {
+  text-align: center;
+ }
+
  /* Footer styling slut */
 
 } 
@@ -238,7 +239,6 @@
     flex-direction: row; /* sætter elementerne på række */
     justify-content: space-evenly;
     align-items: flex-start;
-  
     width: 100%;
   }
 }

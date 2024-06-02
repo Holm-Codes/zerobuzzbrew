@@ -12,11 +12,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Indsæt dette i alle HTML til headeren -->
 </head>
 <body>
 
   <header>
-
+    <div class="entire-mobil-menu">
+      <a href="index.html">
+        <img src="images/forside/logo.png" alt="ZeroBuzz Brew logo" id="logo">  <!--Få hjælp til at inkludere billede i menuen -->
+      </a>
+      <div class="mobil-menu" id="my-mobil-menu">
+        <div id="menu-links">
+          <a href="index.html" class="menu">Nyheder</a>
+          <a href="produkter.html" class="menu">Produkter</a>
+          <a href="events.html" class="menu">Events</a>
+          <a href="bag-produktionen.html" class="menu">Om ZeroBuzz Brew</a>
+          <a href="index.html" class="menu">Bæredygtigthed</a>
+          <a href="index.html" class="menu">Kontakt</a>
+          <a href="index.html" class="menu">FAQ</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -80,7 +99,26 @@
 
     <!--Footer sektion start -->
     <footer>
-
+      <div class="footer-container">
+        <a href="index.html" class="logo-footer">
+          <img src="images/forside/logo-footer.png" alt="ZeroBuzz brew logo" class="logo-footer">
+        </a>
+        <div class="some-container">
+          <img src="images/forside/instagram.webp" alt="ZeroBuzz Brews Instagram profil" class="some-ikon">
+          <img src="images/forside/x.png" alt="ZeroBuzz Brews X profil" class="some-ikon">
+        </div>
+        <div class="footer-links">
+          <a href="events.html">Events</a>
+          <a href="bag-produktionen.html">Om ZeroBuzz Brew</a>
+          <a href="index.html">Kontakt</a>
+          <a href="index.html">FAQ</a>
+        </div>
+        <p id="p-footer">
+          Cookiepolitik - Privatlivspolitik<br><br>
+          © 2024 ZeroBuzz Brew<br>
+          All Rights Reserved
+        </p>
+      </div>
     </footer>
     <!--Footer sektion slut -->
   </main>

@@ -34,11 +34,90 @@
 
    p {
     font-family: "Roboto Slab", serif;
+    max-width: 50ch;
   }
 
   img {
     width: 100%; /* gør billederne responsive, så de altid vil fylde 100% at viewportens størelse*/
     height: auto; /* ændrer sig ift. billedest bredde, så billedets dimensioner bevares*/
+  }
+
+   /* Header menu styling start.*/
+
+ .entire-mobil-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  background-color: var(--backgr);
+}
+
+#logo {
+    width: 11rem;
+    height: auto;
+    align-self: center;
+}
+
+ .mobil-menu {
+  overflow: hidden;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+#menu-links {
+  font-family: "Montserrat", sans-serif;
+}
+
+.mobil-menu, a {
+  float: right;
+  display: block;
+  color: var(--contrast);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mobil-menu a:hover {
+  color: var(--dblue);
+}
+
+.mobil-menu a.active {
+  background-color: var(--dblue);
+  border-radius: 10px;
+  color: var(--backgr);
+}
+
+.mobil-menu .icon {
+  display: none;
+  position:relative;
+}
+
+.mobil-menu a {display: none;}
+.mobil-menu a.icon {
+  float: right;
+  display: block;
+  border-radius: 5px;
+}
+
+.mobil-menu.responsive {position: relative;}
+.mobil-menu.responsive a.icon {
+  position: absolute;
+  margin: 1rem;
+  right: 0;
+  top: 0;
+}
+.mobil-menu.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+ /* Header menu styling slut */
+
+  #desktop-hero {
+  display: none;
   }
 
   .produktion-landing-container {
@@ -55,9 +134,58 @@
     color: var(--backgr); /* bestemmer farven på teksten i kassen */
   }
 
+/* Footer styling start */
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  background-color: var(--lblue);
+}
+
+.logo-footer {
+  width: 250px;
+  height: auto;
+}
+
+.some-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.some-ikon {
+  height: auto;
+  width: 20px;
+}
+
+.footer-links {
+display: flex;
+flex-direction: column;
+font-size: 0.5rem;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.footer-links, a:hover {
+text-decoration: underline;
+color: var(--backgr);
+}
+
+#p-footer {
+text-align: center;
+}
+/* Footer styling slut */
 } 
 
  @media (min-width: 501px) {
+
+  #desktop-hero {
+    display: flex;
+    }
+  
 
   .row {
     display: flex; /* gør elementerne flexible ift. kassen*/
@@ -73,5 +201,36 @@
     margin-right: 1rem; /* skaber luft udenfor boksen i højre side*/
   }
 
+  .produktion-img {
+    width: 400px;
+    height: auto;
+  }
+
+  .air {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
   
 }
+
+@media (min-width: 770px) {
+
+  .mobil-menu a.icon {
+    display: none;
+  }
+  
+  .mobil-menu a {
+    display: block;
+  }
+  
+  #menu-links {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  
+  .entire-mobil-menu {
+    justify-content: space-between;
+  }
+  
+  }

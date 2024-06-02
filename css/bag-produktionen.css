@@ -43,11 +43,8 @@
 
   .produktion-landing-container {
     display: flex; /* gør elementerne flexible ift. kassen*/
-    align-items: center; /* centerer elementerne i kassen */
-    flex-direction: column; /* sætter elementerne i kassen i en søjle */
-    text-align: center; /* centerer teksen i kassen */
     background-color: var(--dblue); /* bestemmer kassens baggrundsfarve */
-    color: var(--backgr); /* bestemmer farven på teksten i kassen */
+    padding-bottom: 1rem;
   }
   
   .produktionen-info-container{

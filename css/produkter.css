@@ -15,6 +15,7 @@
  main {
    color: var(--contrast);
    background-color: var(--backgr);
+   margin: 0;
  }
 
  body {
@@ -36,16 +37,6 @@
    p {
     font-family: "Roboto Slab", serif;
     align-items: center;
-  }
-
-  h2{
-      font-weight: 700;
-      font-size: 1.6rem;
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 0.5rem;
   }
 
   h4{
@@ -147,18 +138,10 @@
  /* Produkt landing styling start */
 
  .produkt-landing-container {
-  position: relative;
-  flex-direction: column;
-  display: flex;  
-  text-align: center;
-  align-items: center;
-  background-image: url("images/produkter/produkt-hero-mobil.png"); /* Fix billedvisning problem!*/
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-  min-width: 320px; 
-  height: 100vh;
-  margin: 3.2rem; 
+  width: 1520px;
+  height: auto;
+  margin: 0;
+  margin-right: -20;
  }
  
 /* Produkt landing styling slut */
@@ -207,17 +190,28 @@
   .footer-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: "Montserrat", sans-serif;
     justify-content: center;background-color: var(--dblue);
   }
 
-  h3 {
-    font-family: "Pacifico", cursive;
-    font-weight: 500;
-    font-size: 2rem;
-    align-self: center;  
-    margin: 0;
-    margin-top: 0.5rem;
+  .logo-footer {
+    width: 250px;
+    height: auto;
+  
+  }
+
+  .some-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .some-ikon {
+
+    height: auto;
+    width: 20px;
   }
 
  .footer-links {

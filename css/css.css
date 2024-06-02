@@ -18,6 +18,7 @@
 
  body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
  }
 
@@ -102,8 +103,15 @@ h1 {
 }
 
 /*  Mobile landing carousel style slut */
+/* Desktop landing hidden*/
+.desktop-landing {
+  display: none;
+}
 
-
+.desktop-landing-buttons {
+  display: none;
+}
+/* Desktop landing hidden*/
 
 /*  Check om det er nødvendigt med den her box! */
 .forsidebox {
@@ -112,17 +120,12 @@ h1 {
 }
 
 /*  Mobile events style start */
-
-
-/*  Fix this mess, style them seperately*/
 #eventhero-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  width: 100%;
   height: 100vh;
 }
 
-.button {
+.button-event, .button-produktion {
   background-color: var(--lblue);
   color: var(--contrast);
   border: none;
@@ -135,7 +138,7 @@ h1 {
   cursor: pointer;
 }
 
-.button:hover{
+.button-event:hover, .button-produktion:hover{
   background-color: var(--dblue);
   color: var(--backgr);
   }
@@ -143,25 +146,103 @@ h1 {
 /*  Mobile events sektion style slut */
 
 /*  Mobile bag produktionen sektion style start */
-
-
-/*  Fix this after. Same issue as above */
 .produktionhero-container {
-  background-image: url("../images/bag-produktionen/produktion-hero-mobil");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%; 
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 100vh;
 }
-
+/*  Mobile bag produktionen sektion style slut */
 }
 
 @media (min-width: 501px) {
+
+/* Mobil landing hidden*/
+  .slider {
+  display: none;
+  }
+
+  .slides {
+    display: none;
+  }
+
+  .navigation {
+  display: none;
+  }
+/* Mobil landing hidden*/
+
+/* Desktop landing styling*/
+
+  .desktop-landing {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  .desktop-landing-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .button-landing {
+    background-color: var(--lblue);
+    color: var(--contrast);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: -5rem;
+    margin-left: 0.9rem;
+  }
+
+  .button-landing:hover{
+    background-color: var(--dblue);
+    color: var(--backgr);
+    }
+/* Desktop landing styling*/
+
+/* Desktop event styling*/
+
+    .button-event {
+      background-color: var(--lblue);
+      color: var(--contrast);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      align-self: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      display: flex;
+      justify-self: right;
+      margin-right: 72rem;
+      margin-top: -6rem;
+    }
+
+
+
+    .button-produktion {
+      background-color: var(--lblue);
+      color: var(--contrast);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      align-self: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      display: flex;
+      justify-self: right;
+      align-self: flex-end;
+      margin-right: 5rem;
+      margin-top: -6rem;
+    }
 
 }

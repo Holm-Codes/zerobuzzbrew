@@ -137,10 +137,13 @@
  /* Produkt landing styling start */
 
  .produkt-landing-container {
-  width: 1520px;
+  display: none;
+ }
+
+ .produkt-hero-mobil {
+  display: flex;
+  width: 100%;
   height: auto;
-  margin: 0;
-  margin-right: -20;
  }
  
 /* Produkt landing styling slut */
@@ -152,8 +155,18 @@
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  width: 100vw;
-  margin: 1rem;
+  width: 100%;
+  height: auto;
+  margin: 0;
+ }
+
+ .produkt-overskrift {
+  width: 30ch;
+ }
+
+ .produkt-tekst {
+  margin: 0.1rem;
+  width: 40ch;
  }
 
  .produkt-img {
@@ -172,6 +185,7 @@
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
+  margin-top: 0.8rem;
   align-self: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -233,6 +247,18 @@
 } 
 
  @media (min-width: 501px) {
+
+  .produkt-hero-mobil{
+    display: none;
+  }
+
+  .produkt-landing-container {
+    display: flex;
+    width: 1520px;
+    height: auto;
+    margin: 0;
+    margin-right: -20;
+   }
 
   .row {
     display: flex; /* gør elementerne flexible ift. kassen*/

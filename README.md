@@ -28,7 +28,7 @@ Programmering
     Igennem kodningsprocessen benyttede jeg googles inspect tool først ved Mobile first metoden og dernæst til de forskellige desktop viewport skærmstørrelser.
 
 * Lighthouse analyse - Desktop + Mobil:
-    Der blev foretaget en Lighthouse analyse (via Google Inspect Tool) af index.hmtl (ZeroBuzz Brews forside), før optimering (Se screenshot i bilag slide 72). Her var samtlige billeder på sitet .png filer. Ved hjælp af en png til webp conveter, komprimerede jeg billederne på siden, så filstørrelserne blev mindre og derigennem forbedre forsidens performance (Se screenshot i bilag slide 73)
+    Der blev foretaget en Lighthouse analyse (via Google Inspect Tool) af index.hmtl (ZeroBuzz Brews forside), før optimering (Se screenshot i bilag slide 72). Her var samtlige billeder på sitet .png filer. Ved hjælp af en png til webp conveter, komprimerede jeg billederne på siden til .webp filer, så filstørrelserne blev mindre og derigennem forbedre forsidens performance (Se screenshot i bilag slide 73)
 
     SEO og Accessibility resultaterne er ikke optimale, men dette skyldes b.la. for mange link på sitet der ikke virker. Disse problemer ville selvfølgelig kunne løses, hvis flere sider blev kodet, og derigennem vil flere links virke.
 

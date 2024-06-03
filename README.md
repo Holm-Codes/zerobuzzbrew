@@ -1,12 +1,12 @@
-# Multimedieproduktion 1
-# Eksamensprojekt 1. semester, Forår 2024
-# ZeroBuzz Brew
+Multimedieproduktion 1
+Eksamensprojekt 1. semester, Forår 2024
+ZeroBuzz Brew
 
-# Dette respository er programmeringsdelen af den digitale løsning (i.e. en website) til det fiktive mikrobryggeri ZeroBuzz Brew, og er altså ikke
-# en reel hjemmeside.
+Dette respository er programmeringsdelen af den digitale løsning (i.e. en website) til det fiktive mikrobryggeri ZeroBuzz Brew, og er altså ikke
+en reel hjemmeside.
 
-# I denne README.md er der redegjort for relevante kodemæssige elementer, samt henvisninger til uddybende screenshots i det medfølgende process
-# dokument.
+I denne README.md er der redegjort for relevante kodemæssige elementer, samt henvisninger til uddybende screenshots i det medfølgende process
+dokument.
 
 
 Programmering

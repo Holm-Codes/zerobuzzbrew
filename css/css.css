@@ -3,276 +3,277 @@
  * purpose: styling
  **/
 
-/* Define variables in the :root */
+
+/*Styling der skal gøre sig gælende på alle viewports*/ 
+/* Variabler definition*/
  :root {
    --contrast: #000000;
    --backgr: #f9f9f9;
    --lblue: #93dfe4;
    --dblue: #18767c;
  }
+/* Variabler definition*/
 
  main {
-   color: var(--contrast);
-   background-color: var(--backgr);
+  color: var(--contrast); /*Bestemmer standard skriftypefarve på samtlige elementer under 'main'*/
+  background-color: var(--backgr); /*fastsat baggrundsfarve*/
  }
 
  body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  height: 100%;/* Sørger for at elementerne fylder 100% af højden*/
+  width: 100%;/* Sørger for at elementerne fylder 100% af bredden*/
+  margin: 0; /* Sørger for der ikke er noget whitespace omkring taggen)*/
  }
+
+ h1 {
+  font-family: "Pacifico", cursive; /* Specificere skriften brugt til specifikke tags*/
+}
+
+ h2, h3, h4, h5, h6{
+  font-family: "Montserrat", sans-serif; /* Specificere skriften brugt til specifikke tags*/
+ }
+
+ p {
+  font-family: "Roboto Slab", serif; /* Specificere skriften brugt til specifikke tags*/
+}
+ /*Styling der skal gøre sig gælende på alle viewports*/ 
 
 /* Media Query for Mobile Viewport */
 @media (min-width: 320px),(max-width:500px) {
 
-h1 {
-  font-family: "Pacifico", cursive;
-}
-
- h2, h3, h4, h5, h6{
-  font-family: "Montserrat", sans-serif;
- }
-
- p {
-  font-family: "Roboto Slab", serif;
-}
-
  /* Header menu styling start.*/
 
  .entire-mobil-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 0;
+  display: flex; /* gør elementerne flexible ift. kassen*/
+  flex-direction: row; /* Arrangerer elementerne i en række */
+  flex-wrap: wrap; /* Tillader elementerne at bryde til næste linje */
+  justify-content: space-between; /* Fordeler mellemrum mellem elementerne */
+  align-items: stretch; /* Strækker elementerne til samme højde */
+  margin: 0; /* Fjerner margin omkring containeren */
 }
 
 #logo {
-    width: 11rem;
-    height: auto;
-    align-self: center;
+  width: 11rem; /* Sætter bredden på logoet */
+  height: auto; /* Bevarer billedets proportioner */
+  align-self: center; /* Centrerer logoet vertikalt */
 }
 
  .mobil-menu {
-  overflow: hidden;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
+  overflow: hidden; /* Skjuler indhold der går uden for containeren */
+  position: relative; /* Giver elementet en relativ position */
+  font-family: "Montserrat", sans-serif; /* Sætter skrifttypen */
 }
 
 #menu-links {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;  /* Sætter skrifttypen */
 }
 
 .mobil-menu, a {
-  float: right;
-  display: block;
-  color: var(--contrast);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  float: right; /* Placerer elementet til højre */
+  display: block; /* Gør elementet til en blok */
+  color: var(--contrast); /* Sætter tekstfarven */
+  text-align: center; /* Centrerer teksten */
+  padding: 14px 16px; /* Tilføjer indvendig afstand */
+  text-decoration: none; /* Fjerner underlinjering på links */
+  font-size: 17px; /* Sætter tekststørrelsen */
 }
 
 .mobil-menu a:hover {
-  color: var(--dblue);
+  color: var(--dblue); /* Ændrer tekstfarven til en variabel farve ved hover */
 }
 
 .mobil-menu a.active {
-  background-color: var(--dblue);
-  border-radius: 10px;
-  color: var(--backgr);
+  background-color: var(--dblue); /* Sætter baggrundsfarven til en variabel farve når elementet er aktivt */
+  border-radius: 10px; /* Tilføjer afrundede hjørner med en radius på 10px */
+  color: var(--backgr); /* Sætter tekstfarven til en variabel farve */
 }
 
 .mobil-menu .icon {
-  display: none;
-  position:relative;
+  display: none; /* Skjuler ikon-elementet */
+  position:relative; /* Sætter positioneringen til relativ */
 }
 
-.mobil-menu a {display: none;}
+.mobil-menu a {display: none;} /* Skjuler link-elementerne */
 .mobil-menu a.icon {
-  float: right;
-  display: block;
-  border-radius: 5px;
+  float: right; /* Flytter ikon-elementet til højre */
+  display: block; /* Gør ikon-elementet blokbaseret */
+  border-radius: 5px; /* Tilføjer afrundede hjørner med en radius på 5px */
 }
 
-.mobil-menu.responsive {position: relative;}
+.mobil-menu.responsive {position: relative;} /* Sætter positioneringen til relativ når menuen er responsiv */
 .mobil-menu.responsive a.icon {
-  position: absolute;
-  margin: 1rem;
-  right: 0;
-  top: 0;
+  position: absolute; /* Sætter ikon-elementet til absolut positionering når menuen er responsiv */
+  margin: 1rem; /* Tilføjer margener omkring ikon-elementet */
+  right: 0; /* Flytter ikon-elementet til højre */
+  top: 0; /* Flytter ikon-elementet til toppen */
 }
 .mobil-menu.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
+  float: none; /* Fjerner flydning af link-elementerne når menuen er responsiv */
+  display: block; /* Gør link-elementerne blokbaserede når menuen er responsiv */
+  text-align: left; /* Venstrejusterer teksten i link-elementerne */
 }
  /* Header menu styling slut */
 
 
 /*  Mobile landing carousel style start */
 .slider {
-  position: relative;
-  width: auto;
-  min-width: 320px;
-  margin: auto;
-  overflow: hidden;
+  position: relative; /* Sætter positioneringen til relativ for at placere elementer absolut indenfor denne */
+  width: auto; /* Sætter bredden til automatisk */
+  min-width: 320px; /* Sætter den mindste bredde til 320px */
+  margin: auto; /* Centrerer slideren horisontalt */
+  overflow: hidden; /* Skjuler indhold, der går udenfor sliderens rammer */
 }
 
 .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+  display: flex; /* gør elementerne flexible ift. kassen*/
+  transition: transform 0.5s ease-in-out; /* Tilføjer en glidende overgang ved transformering */
+  width: 100%; /* Sætter bredden til 100% */
 }
 
 .slide {
-  width: 100%;
-  flex-shrink: 0;
+  width: 100%; /* Sætter slide-elementets bredde til 100% */
+  flex-shrink: 0; /* Forhindrer slide-elementerne i at krympe */
 }
 
 .slide img {
-  width: 100%;
-  display: block;
+  width: 100%; /* Sætter billedets bredde til 100% af forælderens bredde */
+  display: block; /* Gør billedet blokbaseret */
 }
 
 .navigation {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
+  position: absolute; /* Sætter navigationens positionering til absolut */
+  width: 100%; /* Sætter navigationens bredde til 100% */
+  bottom: 10px; /* Placerer navigationen 10px fra bunden */
+  display: flex; /* Gør navigationselementerne fleksible */
+  justify-content: center; /* Centrerer navigationselementerne horisontalt */
 }
 
 .navigation label {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  border-radius: 50%;
-  background: #bbb;
-  cursor: pointer;
+  width: 10px; /* Sætter label-elementernes bredde til 10px */
+  height: 10px; /* Sætter label-elementernes højde til 10px */
+  margin: 0 5px; /* Tilføjer 0px top/bund margin og 5px venstre/højre margin */
+  border-radius: 50%; /* Gør label-elementerne cirkulære */
+  background: #bbb; /* Sætter label-elementernes baggrundsfarve til #bbb */
+  cursor: pointer; /* Ændrer cursoren til en pointer ved hover */
 }
 
 #slide1:checked ~ .slides {
-  transform: translateX(0%);
+  transform: translateX(0%); /* Flytter slides til 0% hvis slide1 er valgt */
 }
 
 #slide2:checked ~ .slides {
-  transform: translateX(-100%);
+  transform: translateX(-100%); /* Flytter slides til -100% hvis slide2 er valgt */
 }
 
 #slide3:checked ~ .slides {
-  transform: translateX(-200%);
+  transform: translateX(-200%); /* Flytter slides til -200% hvis slide3 er valgt */
 }
 
 #slide4:checked ~ .slides {
-  transform: translateX(-300%);
+  transform: translateX(-300%); /* Flytter slides til -300% hvis slide4 er valgt */
 }
 
 #slide1:checked ~ .navigation label:nth-child(1),
 #slide2:checked ~ .navigation label:nth-child(2),
 #slide3:checked ~ .navigation label:nth-child(3),
 #slide4:checked ~ .navigation label:nth-child(4) {
-  background: #333;
+  background: #333; /* Ændrer baggrundsfarven til #333 for den valgte navigation label */
 }
 
-/*  Mobile landing carousel style slut */
+/* Mobile landing carousel style slut */
 /* Desktop landing hidden*/
 .desktop-landing {
-  display: none;
+  display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
 }
 
 .desktop-landing-buttons {
-  display: none;
+  display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
 }
 /* Desktop landing hidden*/
 
-/*  Check om det er nødvendigt med den her box! */
 .forsidebox {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* gør elementerne flexible ift. kassen*/
+  flex-direction: column; /* arrangerer elementerne i en søjle*/
 }
 
 /*  Mobile events style start */
 #eventhero-container {
-  width: 100%;
-  height: 100vh;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
 }
 
+/*  button styling start */
 .button-event, .button-produktion {
-  background-color: var(--lblue);
-  color: var(--contrast);
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  align-self: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  background-color: var(--lblue); /* Sætter baggrundsfarven til variablen --lblue */
+  color: var(--contrast); /* Sætter tekstfarven til variablen --contrast */
+  border: none; /* Fjerner standard knapborder */
+  border-radius: 5px; /* Gør knappernes hjørner runde med en radius på 5px */
+  padding: 10px 20px; /* Tilføjer 10px top/bund og 20px venstre/højre polstring */
+  align-self: center; /* Centrerer knapperne i deres fleksible container */
+  font-family: "Montserrat", sans-serif; /* Sætter skrifttypen til Montserrat */
+  font-weight: 600; /* Sætter skriftvægten til 600 (semibold) */
+  transition-duration: 0.4s; /* Tilføjer en overgangseffekt på 0.4 sekunder */
+  cursor: pointer; /* Ændrer cursoren til en pointer ved hover */
 }
 
 .button-event:hover, .button-produktion:hover{
-  background-color: var(--dblue);
-  color: var(--backgr);
+  background-color: var(--dblue); /* Ændrer baggrundsfarven til variablen --dblue ved hover */
+  color: var(--backgr); /* Ændrer tekstfarven til variablen --backgr ved hover */
   }
-
+/*  button styling slut */
 /*  Mobile events sektion style slut */
 
 /*  Mobile bag produktionen sektion style start */
 .produktionhero-container {
-  width: 100%; 
-  height: 100vh;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
 }
 /*  Mobile bag produktionen sektion style slut */
 
 /* Footer styling start */
 .footer-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  justify-content: center;background-color: var(--dblue);
+  display: flex; /* Gør elementerne flexible ift. containeren */
+  flex-direction: column; /* Arrangerer elementerne i en søjle */
+  align-items: center; /* Centrerer elementerne horisontalt */
+  font-family: "Montserrat", sans-serif; /* Sætter fonten til Montserrat */
+  justify-content: center; /* Centrerer elementerne vertikalt */
+  background-color: var(--dblue); /* Sætter baggrundsfarven til variablen --dblue */
 }
 
 .logo-footer {
-  width: 250px;
-  height: auto;
-  margin-top: 1.5rem;
-
+  width: 250px; /* Sætter bredden til 250px */
+  height: auto; /* Højden justeres automatisk for at bevare aspektforholdet */
+  margin-top: 1.5rem; /* Tilføjer en top-margin på 1.5rem */
 }
 
 .some-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Gør elementerne flexible ift. containeren */
+  flex-direction: row; /* Arrangerer elementerne i en række */
+  align-items: center; /* Centrerer elementerne vertikalt */
+  justify-content: center; /* Centrerer elementerne horisontalt */
 }
 
 .some-ikon {
-
-  height: auto;
-  width: 20px;
+  height: auto; /* Højden justeres automatisk for at bevare aspektforholdet */
+  width: 20px; /* Sætter bredden til 20px */
 }
 
 .footer-links {
-display: flex;
-flex-direction: column;
-font-size: 0.5rem;
-transition-duration: 0.4s;
-cursor: pointer;
+  display: flex; /* Gør elementerne flexible ift. containeren */
+  flex-direction: column; /* Arrangerer elementerne i en søjle */
+  font-size: 0.5rem; /* Sætter fontstørrelsen til 0.5rem */
+  transition-duration: 0.4s; /* Tilføjer en transition-effekt med en varighed på 0.4s */
+  cursor: pointer; /* Ændrer markøren til en pointer ved hover */
 }
 
 .footer-links, a:hover {
-text-decoration: underline;
-color: var(--backgr);
+  text-decoration: underline; /* Understreger teksten ved hover */
+  color: var(--backgr); /* Sætter tekstfarven til variablen --backgr */
 }
 
 #p-footer {
-text-align: center;
+  text-align: center; /* Centrerer teksten */
 }
-
-
 /* Footer styling slut */
 
 }
@@ -281,15 +282,15 @@ text-align: center;
 
 /* Mobil landing hidden*/
   .slider {
-  display: none;
+  display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
   }
 
   .slides {
-    display: none;
+    display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
   }
 
   .navigation {
-  display: none;
+  display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
   }
 /* Mobil landing hidden*/
 
@@ -372,7 +373,7 @@ text-align: center;
 @media (min-width: 770px) {
 
   .mobil-menu a.icon {
-    display: none;
+    display: none; /* skjuler elementerne så de ikke 'findes' på siden*/
   }
   
   .mobil-menu a {
@@ -382,7 +383,6 @@ text-align: center;
   #menu-links {
     display: flex;
     margin-top: 0.5rem;
-    
   }
   
   .entire-mobil-menu {

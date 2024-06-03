@@ -64,73 +64,73 @@
  /* Header menu styling start.*/
 
  .entire-mobil-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 0;
+  display: flex; /* Gør elementerne flexible ift. kassen */
+  flex-direction: row; /* Arrangerer elementerne i en række */
+  flex-wrap: wrap; /* Tillader elementerne at bryde til næste linje */
+  justify-content: space-between; /* Fordeler mellemrum mellem elementerne */
+  align-items: stretch; /* Strækker elementerne til samme højde */
+  margin: 0; /* Fjerner margin omkring containeren */
 }
 
 #logo {
-    width: 11rem;
-    height: auto;
-    align-self: center;
+  width: 11rem; /* Sætter bredden på logoet */
+  height: auto; /* Bevarer billedets proportioner */
+  align-self: center; /* Centrerer logoet vertikalt */
 }
 
  .mobil-menu {
-  overflow: hidden;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
+  overflow: hidden; /* Skjuler indhold der går uden for containeren */
+  position: relative; /* Giver elementet en relativ position */
+  font-family: "Montserrat", sans-serif; /* Sætter skrifttypen */
 }
 
 #menu-links {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; /* Sætter skrifttypen */
 }
 
 .mobil-menu, a {
-  float: right;
-  display: block;
-  color: var(--contrast);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  float: right; /* Placerer elementet til højre */
+  display: block; /* Gør elementet til en blok */
+  color: var(--contrast); /* Sætter tekstfarven */
+  text-align: center; /* Centrerer teksten */
+  padding: 14px 16px; /* Tilføjer indvendig afstand */
+  text-decoration: none; /* Fjerner underlinjering på links */
+  font-size: 17px; /* Sætter tekststørrelsen */
 }
 
 .mobil-menu a:hover {
-  color: var(--dblue);
+  color: var(--dblue); /* Ændrer tekstfarven ved hover */
 }
 
 .mobil-menu a.active {
-  background-color: var(--dblue);
-  border-radius: 10px;
-  color: var(--backgr);
+  background-color: var(--dblue); /* Sætter baggrundsfarven for aktive links */
+  border-radius: 10px; /* Gør hjørnerne runde */
+  color: var(--backgr); /* Sætter tekstfarven for aktive links */
 }
 
 .mobil-menu .icon {
-  display: none;
-  position:relative;
+  display: none; /* Skjuler ikonet som standard */
+  position:relative; /* Giver elementet en relativ position */
 }
 
-.mobil-menu a {display: none;}
+.mobil-menu a {display: none;} /* Skjuler links som standard */
 .mobil-menu a.icon {
-  float: right;
-  display: block;
-  border-radius: 5px;
+  float: right; /* Placerer ikonet til højre */
+  display: block; /* Gør ikonet synligt */
+  border-radius: 5px; /* Gør hjørnerne på ikonet runde */
 }
 
-.mobil-menu.responsive {position: relative;}
+.mobil-menu.responsive {position: relative;} /* Giver responsiv menu en relativ position */
 .mobil-menu.responsive a.icon {
-  position: absolute;
-  margin: 1rem;
-  right: 0;
-  top: 0;
+  position: absolute; /* Gør ikonet absolut positioneret */
+  margin: 1rem; /* Tilføjer margin rundt om ikonet */
+  right: 0; /* Placerer ikonet til højre */
+  top: 0; /* Placerer ikonet øverst */
 }
 .mobil-menu.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
+  float: none; /* Fjerner flydning af elementet */
+  display: block; /* Gør linkene synlige */
+  text-align: left; /* Justerer teksten til venstre */
 }
  /* Header menu styling slut */
 
@@ -186,6 +186,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   align-self: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;

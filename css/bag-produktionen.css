@@ -161,11 +161,6 @@
     margin: 1rem;
   }
 
-  /* vend tilbage til dette*/
-  .mobil-hidden {
-    display: none;
-  }
-
 /* Footer styling start */
 .footer-container{
   display: flex;

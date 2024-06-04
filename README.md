@@ -20,6 +20,7 @@ Programmering
     Udover 2 Error codes (se processdokument, bilag s. 70), som ikke har været mulige at rette, har det ikke været nogle problemer ift. valideringen af forside HTMLen. 
     Da det kom til CSS valideringen af forsiden var der ingen problemer.
     Se screenshot i bilag (slide 71)
+    Screenshots af valideringen af forsiden er bare et ekesmpel. Alle andre sider har også fået foretaget HTML og CSS validering samt så vidt muligt rettet evt. errors der opstod.
 
 * Kommentarer i koden:
     Der er benyttet kommentarer i koden til, 1. at gruppere HTML/CSS elementer for at få overblik, og 2. at beskrive, hvad HTMLen og stylingen gør.

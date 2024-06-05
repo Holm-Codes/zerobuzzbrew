@@ -203,15 +203,33 @@
 }
 
 /*  button styling start */
-.button-event, .button-produktion {
+.button-event {
   background-color: var(--lblue); /* Sætter baggrundsfarven til variablen --lblue */
   color: var(--contrast); /* Sætter tekstfarven til variablen --contrast */
+  border: none; /* Fjerner standard knapborder */
+  border-radius: 5px; /* Gør knappernes hjørner runde med en radius på 5px */
+  padding: 10px 20px; /* Tilføjer 10px top/bund og 20px venstre/højre polstring */
+  margin-left: 10rem;
+  margin-top: -20px;
+  align-self: center; /* Centrerer knapperne i deres fleksible container */
+  font-family: "Montserrat", sans-serif; /* Sætter skrifttypen til Montserrat */
+  font-weight: 600; /* Sætter skriftvægten til 600 (semibold) */
+  transition-duration: 0.4s; /* Tilføjer en overgangseffekt på 0.4 sekunder */
+  cursor: pointer; /* Ændrer cursoren til en pointer ved hover */
+}
+
+.button-produktion {
+  background-color: var(--lblue); /* Sætter baggrundsfarven til variablen --lblue */
+  color: var(--contrast); /* Sætter tekstfarven til variablen --contrast */
+  position: relative;
   border: none; /* Fjerner standard knapborder */
   border-radius: 5px; /* Gør knappernes hjørner runde med en radius på 5px */
   padding: 10px 20px; /* Tilføjer 10px top/bund og 20px venstre/højre polstring */
   align-self: center; /* Centrerer knapperne i deres fleksible container */
   font-family: "Montserrat", sans-serif; /* Sætter skrifttypen til Montserrat */
   font-weight: 600; /* Sætter skriftvægten til 600 (semibold) */
+  margin-left: 160px;
+  margin-top: -20px;
   transition-duration: 0.4s; /* Tilføjer en overgangseffekt på 0.4 sekunder */
   cursor: pointer; /* Ændrer cursoren til en pointer ved hover */
 }
@@ -223,12 +241,29 @@
 /*  button styling slut */
 /*  Mobile events sektion style slut */
 
-/*  Mobile bag produktionen sektion style start */
-.produktionhero-container {
-  width: 100%; /* Sætter bredden til 100% af det omgivende element */
-  height: 100vh; /* Sætter højden til 100% af viewport højden */
+#desktop-event-hero{
+  display: none;
 }
-/*  Mobile bag produktionen sektion style slut */
+
+#desktop-produktion-hero {
+  display: none;
+}
+
+#eventhero-container {
+  margin-top: -50rem;
+}
+
+#eventhero-mobil {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#produktionhero-mobil {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 
 /* Footer styling start */
 .footer-container{
@@ -331,25 +366,61 @@
     }
 /* Desktop landing styling*/
 
-/* Desktop event styling*/
+#eventhero-mobil {
+  display: none;
+}
 
-    .button-event {
-      background-color: var(--lblue);
-      color: var(--contrast);
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      align-self: center;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      display: flex;
-      justify-self: right;
-      margin-right: 72rem;
-      margin-top: -6rem;
-    }
+#produktionhero-mobil {
+  display: none;
+}
 
+#eventhero-container {
+  display: flex;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
+  margin: 0;
+}
+
+.button-event {
+  background-color: var(--lblue);
+  color: var(--contrast);
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-self: right;
+  margin-left: 77rem;
+  margin-top: -6rem;
+}
+
+#desktop-event-hero {
+  display: flex;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
+}
+
+.produktionhero-container {
+  display: flex;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
+}
+
+#desktop-produktion-hero {
+  display: flex;
+  width: 100%; /* Sætter bredden til 100% af det omgivende element */
+  height: 100vh; /* Sætter højden til 100% af viewport højden */
+}
+
+
+
+/* Desktop bag produktionen styling*/
     .button-produktion {
       background-color: var(--lblue);
       color: var(--contrast);
@@ -367,7 +438,7 @@
       margin-right: 5rem;
       margin-top: -6rem;
     }
-
+/* Desktop bag produktionen styling*/
 }
 
 @media (min-width: 770px) {
